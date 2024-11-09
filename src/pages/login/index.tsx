@@ -8,6 +8,7 @@ import { themas } from "../../global/themes";
 import Signup from "./signup";
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../../../../Mags_brasas_burguer/App';
+import Cardapio from "./cardapio";
 
 type LoginScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Login'>;
 
@@ -78,7 +79,13 @@ export default function Login({ navigation }: LoginProps) {
                     onPress={getLogin}
                     accessibilityLabel="Login button"
                 >
-                    <Text style={style.buttonText}>Entrar</Text>
+                    <Text 
+                        style={{ color: themas.colors.white, fontWeight: "bold" }}
+                        onPress={() => navigation.navigate('Cardapio')}
+                    >
+                        Entrar
+                    </Text>
+
                 </TouchableOpacity>
             </View>
 

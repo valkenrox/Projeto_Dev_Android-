@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from './src/pages/login/index';
 import SignUp from './src/pages/login/signup';
+import Cardapio from './src/pages/login/cardapio';
 
 // Define types for the navigation stack
 export type RootStackParamList = {
@@ -28,6 +29,13 @@ export default function App() {
           component={SignUp} 
           options={{ title: 'Sign Up' }} 
         />
+
+        <Stack.Screen 
+          name="Cardapio" 
+          component={Cardapio} 
+          options={{ title: 'Cardapio' }} 
+        />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

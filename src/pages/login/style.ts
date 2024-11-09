@@ -20,7 +20,8 @@ export const style = StyleSheet.create({
         height:Dimensions.get('window').height/3,
         width:'100%',
         //backgroundColor:"blue",
-        paddingHorizontal: 37
+        paddingHorizontal: 37,
+        marginBottom:20,
     
     },
     boxBottom:{
@@ -32,16 +33,26 @@ export const style = StyleSheet.create({
     },
     logo:{
         alignItems: 'center',
-        height: 200,
-        width: 200,
+        height: 150,
+        width: 150,
         justifyContent:'center'
     },
+
+    logo2: {
+        position: 'absolute',
+        width: 250,
+        height: 100,
+        top: -165,
+        left: -250,
+        zIndex: 2,  
+    },  
+
     title:{
         fontSize: 20,
         fontWeight: 'bold',
-        color:themas.colors.white
-    }
-    ,
+        color:"themas.colors.white"
+    },
+
     titulo:{
         fontSize:18,
         fontFamily: 'Arial',
@@ -49,16 +60,15 @@ export const style = StyleSheet.create({
         fontWeight:'semibold',
         marginLeft: 5,
         marginTop:5,
-
-
     },
+
     boxInput:{
         width: '100%',
         height: 40,
         borderWidth:1,
         borderRadius:20,
         flexDirection:'row',
-        marginTop:5,
+        marginTop:10,
         alignItems:'center',
         paddingHorizontal: 10,
         backgroundColor:themas.colors.lightGray,
@@ -84,7 +94,9 @@ export const style = StyleSheet.create({
         shadowOpacity:0.29,
         shadowRadius:4.65,
         elevation:7,
-        pointerEvents:'box-none'
+        pointerEvents:'box-none',
+        marginBottom:200,
+
     },
     buttonText:{ 
         fontSize:14,
@@ -95,6 +107,48 @@ export const style = StyleSheet.create({
     buttonCreate:{
         
 
-    }
+    },
 
-})
+    back_image: {
+        position: 'absolute',
+        width: 500,
+        height: 120,
+        top: -180,
+        left: -250,
+        zIndex: 1,
+    },
+
+    tit_burguer:{
+        fontSize:18,
+        fontFamily: 'Arial',
+        color: themas.colors.white,
+        fontWeight:'semibold',
+        marginLeft: -50,
+        marginTop:-50,
+    },
+
+    smash_tudo: {
+        position: 'absolute',
+        width: 300,
+        height: 125,
+        top: -10,
+        left: -80,  
+    }, 
+
+    smash_farofa: {
+        position: 'absolute',
+        width: 300,
+        height: 125,
+        top: -10,
+        right: -80,  
+    }, 
+
+    tri_chedar: {
+        position: 'absolute',
+        width: 300,
+        height: 125,
+        top: 200,
+        left: -80,  
+    },
+
+});

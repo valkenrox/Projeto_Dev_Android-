@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Alert, View, Text, TextInput, TouchableOpacity } from "react-native";
+import { Alert, View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 import { style } from "./style";
+import logo from "../../../assets/logo.png";
 
 export default function SignUp() {
     const [email, setEmail] = useState('');
@@ -37,31 +38,59 @@ export default function SignUp() {
         }
     }
 
-    return (
-        <View style={style.container}>
-            <Text style={style.title}>Sign Up</Text>
-            <TextInput
-                placeholder="Name"
-                value={name}
-                onChangeText={setName}
-                style={style.input}
+
+
+return (
+    <View style={style.container}>
+
+        <View style={style.boxTop}>
+            <Image 
+                source={logo} 
+                style={style.logo}
+                resizeMode="contain"
             />
-            <TextInput
-                placeholder="Email"
-                value={email}
-                onChangeText={setEmail}
-                style={style.input}
-            />
-            <TextInput
-                placeholder="Password"
-                value={password}
-                onChangeText={setPassword}
-                style={style.input}
-                secureTextEntry
-            />
-            <TouchableOpacity style={style.button} onPress={handleSignUp}>
+        </View>
+
+        <View style={style.boxMid}>
+            <Text style={style.titulo}>Nome</Text>
+            <View style={style.boxInput}>
+                <TextInput 
+                    placeholder="Name"
+                    value={name}
+                    onChangeText={setName}
+                    style={style.input}                    
+                />
+                </View>
+
+            <Text style={style.titulo}>E-mail</Text>
+            <View style={style.boxInput}>
+                <TextInput 
+                    placeholder="Email"
+                    value={email}
+                    onChangeText={setEmail}
+                    style={style.input}                   
+                />
+                </View>
+
+            <Text style={style.titulo}>Senha</Text>
+            <View style={style.boxInput}>
+                <TextInput 
+                    placeholder="Password"
+                    value={password}
+                    onChangeText={setPassword}
+                    style={style.input}
+                    secureTextEntry                   
+                />
+                </View>
+            
+        </View>
+
+        <TouchableOpacity style={style.button} onPress={handleSignUp}>
                 <Text style={style.buttonText}>Register</Text>
             </TouchableOpacity>
-        </View>
-    );
+    </View>
+);
 }
+
+
+

@@ -7,10 +7,11 @@ export default function SignUp() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
+    const [adress, setAdress] = useState('');
 
     async function handleSignUp() {
         try {
-            if (!email || !password || !name) {
+            if (!email || !password || !name || !adress) {
                 return Alert.alert("Error", "All fields are required.");
             }
             // Assuming JSON server is running on localhost:3000
@@ -71,6 +72,16 @@ return (
                     style={style.input}                   
                 />
                 </View>
+
+                <Text style={style.titulo}>Endereço Completo</Text>
+            <View style={style.boxInput}>
+                <TextInput 
+                    placeholder="Endereço"
+                    value={adress}
+                    onChangeText={setAdress}
+                    style={style.input}                   
+                />
+                </View>    
 
             <Text style={style.titulo}>Senha</Text>
             <View style={style.boxInput}>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Alert, View, Text, TextInput, TouchableOpacity, Image } from "react-native";
+import { Alert, View, Text, TextInput, TouchableOpacity, Image, ScrollView} from "react-native";
 import { style } from "./style";
 import logo from "../../../assets/logo.png";
 import back_bacon from "../../../assets/background_bacon.png";
@@ -89,8 +89,8 @@ export default function SignUp() {
                   resizeMode="contain"
               />
               <Text style={style.titulo}>Triplo Cheddar R$ 56,99</Text>
-
           </View>
+
       </View>
   );
   

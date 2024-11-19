@@ -78,14 +78,14 @@ const App = ({ navigation }:   LoginProps ) => {
     setCart((prevCart) => {
       const itemIndex = prevCart.findIndex((i) => i.id === item.id);
 
-      // Se o item já estiver no carrinho, incrementa a quantidade
+      
       if (itemIndex !== -1) {
         const updatedCart = [...prevCart];
         updatedCart[itemIndex].quantity += 1;
         return updatedCart;
       }
 
-      // Caso contrário, adiciona o item com quantidade inicial 1
+      
       return [...prevCart, { ...item, quantity: 1 }];
     });
   };

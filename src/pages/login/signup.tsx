@@ -14,7 +14,7 @@ export default function SignUp() {
             if (!email || !password || !name || !adress) {
                 return Alert.alert("Error", "Todos os campos são obrigatórios.");
             }
-            // Assuming JSON server is running on localhost:3000
+            
             const response = await fetch("http://localhost:3000/users", {
                 method: "POST",
                 headers: {
@@ -30,7 +30,7 @@ export default function SignUp() {
 
             if (response.ok) {
                 Alert.alert("Sucesso", "Usuário registrado com sucesso!");
-                // Navigate back to Login screen or other action
+                
             } else {
                 Alert.alert("Error", "Não conseguimos registrar seu usuário.");
             }

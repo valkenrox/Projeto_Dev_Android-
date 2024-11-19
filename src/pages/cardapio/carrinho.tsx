@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
+import React, { useState }from 'react';
+import { View, Text, FlatList, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import { themas } from "../../global/themes";
 //import style from '../login/style';
 
@@ -10,7 +10,48 @@ const Cart = ({ route, navigation }: { route: any; navigation: any }) => {
       return sum + parseFloat(item.preco) * item.quantity;
     }, 0
 );
-    
+const [isSaving, setIsSaving] = useState(false);
+async function handleSaveCart() {
+  try {
+      setIsSaving(true);
+
+      
+      if (cart.length === 0) {
+          setIsSaving(false);
+          return Alert.alert("Aviso", "O carrinho está vazio!");
+      }
+
+      const response = await fetch("http://localhost:3001/cart", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+              items: cart,
+              total: total.toFixed(2),
+              date: new Date().toISOString(),
+          }),
+      });
+
+      if (!response.ok) {
+          throw new Error("Erro ao salvar os itens do carrinho no servidor.");
+      }
+
+      Alert.alert("Sucesso", "Carrinho salvo com sucesso!",
+        [
+          {
+            text: "OK",
+            onPress: () => navigation.navigate("Login")
+          }
+        ]
+      );
+  } catch (error) {
+      console.error("Erro ao salvar o carrinho:", error);
+      Alert.alert("Erro", "Não foi possível salvar o carrinho.");
+  } finally {
+      setIsSaving(false);
+  }
+}
   
     return (
       <View style={styles.container}>
@@ -29,8 +70,18 @@ const Cart = ({ route, navigation }: { route: any; navigation: any }) => {
         />
         <Text style={styles.total}>Total: R$ {total.toFixed(2)}</Text>
         <TouchableOpacity
+                style={styles.button}
+                onPress={handleSaveCart}
+                disabled={isSaving}
+            >
+                <Text style={styles.buttonText}>
+                    {isSaving ? "Salvando..." : "Salvar Carrinho"}
+                </Text>
+            </TouchableOpacity>
+        <TouchableOpacity
           style={styles.button}
-          onPress={() => alert('Compra finalizada!')}
+          onPress={() => handleSaveCart}
+          disabled={isSaving}
         >
           <Text style={styles.buttonText}>Finalizar Compra</Text>
         </TouchableOpacity>

@@ -107,6 +107,25 @@ export const style = StyleSheet.create({
         marginBottom:200,
 
     },
+    buttonSecundary:{
+        width:250,
+        height:50,
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:themas.colors.gray,
+        borderRadius:40,
+        shadowColor:'#000',
+        shadowOffset:{
+            width:0,
+            height:3
+        },
+        shadowOpacity:0.29,
+        shadowRadius:4.65,
+        elevation:7,
+        pointerEvents:'box-none',
+        marginBottom:200,
+
+    },
     buttonText:{ 
         fontSize:14,
         color:'#FFF',
@@ -120,8 +139,8 @@ export const style = StyleSheet.create({
 
     back_image: {
         position: 'relative',
-        height: 150,
-        width: 600,
+        height: '100%',
+        width: '100%',
         marginBottom: 20,
         overflow: 'hidden',
         justifyContent: 'center'

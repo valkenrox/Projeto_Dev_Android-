@@ -12,7 +12,7 @@ export default function SignUp() {
     async function handleSignUp() {
         try {
             if (!email || !password || !name || !adress) {
-                return Alert.alert("Error", "All fields are required.");
+                return Alert.alert("Error", "Todos os campos são obrigatórios.");
             }
             // Assuming JSON server is running on localhost:3000
             const response = await fetch("http://localhost:3000/users", {
@@ -23,19 +23,20 @@ export default function SignUp() {
                 body: JSON.stringify({
                     email,
                     password,
-                    name
+                    name,
+                    adress
                 })
             });
 
             if (response.ok) {
-                Alert.alert("Success", "User registered successfully!");
+                Alert.alert("Sucesso", "Usuário registrado com sucesso!");
                 // Navigate back to Login screen or other action
             } else {
-                Alert.alert("Error", "Could not register user.");
+                Alert.alert("Error", "Não conseguimos registrar seu usuário.");
             }
         } catch (error) {
             console.error(error);
-            Alert.alert("Error", "There was an error registering the user.");
+            Alert.alert("Error", "Houve um arro ao registrar seu usuário.");
         }
     }
 

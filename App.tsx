@@ -5,11 +5,14 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from './src/pages/login/index';
 import SignUp from './src/pages/login/signup';
 import Cardapio from './src/pages/cardapio/cardapio';
+import Carrinho from './src/pages/cardapio/carrinho';
 
 // Define types for the navigation stack
 export type RootStackParamList = {
   Login: undefined;
   SignUp: undefined;
+  Cardapio: undefined;
+  Cart: { cart: any[] };
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -35,6 +38,12 @@ export default function App() {
           component={Cardapio} 
           options={{ title: 'Cardapio' }} 
         />
+        <Stack.Screen name="Cart" component={Carrinho} 
+        options={{title:'Cart'}}
+        />
+      
+      
+
 
       </Stack.Navigator>
     </NavigationContainer>

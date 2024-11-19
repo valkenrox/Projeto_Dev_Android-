@@ -1,9 +1,22 @@
-import React from 'react';
-import { View, Text, Image, ScrollView, StyleSheet } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import React, { useState } from 'react';
+import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
+//import Icon from 'react-native-vector-icons/FontAwesome';
 import logo2 from "../../../assets/logo.png";
-import back_bacon from "../../../assets/background_bacon.png";
+import { MaterialIcons } from '@expo/vector-icons';
+import AntDesign from '@expo/vector-icons/AntDesign';
+//import Ionicons from '@expo/vector-icons/Ionicons';
+import back_bacon from "../../../assets/back-bacon.jpg";
 import { style } from './style';
+import { themas } from "../../global/themes";
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RootStackParamList } from '../../../App';
+import Carrinho from "../cardapio/carrinho"
+
+type LoginScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Login'>;
+
+interface LoginProps {
+  navigation: LoginScreenNavigationProp;
+}
 
 const ofertas = [
   {
@@ -57,7 +70,25 @@ const ofertas = [
   }
 ];
 
-const App = () => {
+const App = ({ navigation }:   LoginProps ) => {
+
+  const [cart, setCart] = useState<any[]>([]);
+
+  const addToCart = (item: any) => {
+    setCart((prevCart) => {
+      const itemIndex = prevCart.findIndex((i) => i.id === item.id);
+
+      // Se o item já estiver no carrinho, incrementa a quantidade
+      if (itemIndex !== -1) {
+        const updatedCart = [...prevCart];
+        updatedCart[itemIndex].quantity += 1;
+        return updatedCart;
+      }
+
+      // Caso contrário, adiciona o item com quantidade inicial 1
+      return [...prevCart, { ...item, quantity: 1 }];
+    });
+  };
   return (
     <ScrollView style={styles.container}>
 
@@ -74,9 +105,15 @@ const App = () => {
             <Text style={styles.price}> R$ {oferta.preco}</Text>
           </View>
           <Image source={{ uri: oferta.imagem }} style={styles.image} />
-          <Icon name="plus-circle" size={30} color="#4CAF50" style={styles.icon} />
+          <TouchableOpacity onPress={() => addToCart(oferta)}>
+            <AntDesign size={40} name="pluscircle" color={themas.colors.primary} />
+          </TouchableOpacity>
+          
         </View>
       ))}
+       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Cart', { cart })}>
+          <Text style={styles.buttonText}>Ir para o Carrinho</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 };
@@ -117,11 +154,37 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     borderRadius: 8,
-    marginBottom: 10
+    marginBottom: 10,
+    marginRight: 5
   },
   icon: {
     marginTop: 5
-  }
+  },
+  button:{
+    width:250,
+    height:50,
+    alignItems:'center',
+    justifyContent:'center',
+    backgroundColor:themas.colors.primary,
+    borderRadius:40,
+    shadowColor:'#000',
+    shadowOffset:{
+        width:0,
+        height:3
+    },
+    shadowOpacity:0.29,
+    shadowRadius:4.65,
+    elevation:7,
+    pointerEvents:'box-none',
+    marginBottom:200,
+
+},
+buttonText:{ 
+  fontSize:14,
+  color:'#FFF',
+  fontWeight:'bold' 
+
+}
 });
 
 export default App;

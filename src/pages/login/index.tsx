@@ -7,8 +7,8 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { themas } from "../../global/themes";
 import Signup from "./signup";
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from '../../../../Mags_brasas_burguer/App';
-import Cardapio from "./cardapio";
+import { RootStackParamList } from '../../../App';
+import cardapio from "../cardapio/cardapio";
 
 type LoginScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Login'>;
 

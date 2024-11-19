@@ -1,16 +1,18 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "email": "user1@example.com",
-            "password": "password123",
-            "name": "User One"
-        },
-        {
-            "id": 2,
-            "email": "user2@example.com",
-            "password": "password456",
-            "name": "User Two"
-        }
-    ]
+  "users": [
+    {
+      "id": "4c03",
+      "email": "value2@gmail.com",
+      "password": "2131",
+      "name": "carol",
+      "adress": "moro aqui, 22"
+    },
+    {
+      "id": "732d",
+      "email": "valeu3@mail.com",
+      "password": "1231",
+      "name": "teste2",
+      "adress": "moro la, 23"
+    }
+  ]
 }

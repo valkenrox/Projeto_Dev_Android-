@@ -3,8 +3,16 @@ import { View, Text, FlatList, StyleSheet, TouchableOpacity, Alert } from 'react
 import { themas } from "../../global/themes";
 //import style from '../login/style';
 
+
+type CartItem = {
+  id: string;
+  titulo: string;
+  preco: string;
+  quantity: number;
+};
+
 const Cart = ({ route, navigation }: { route: any; navigation: any }) => {
-    const { cart } = route.params;
+  const [cart, setCart] = useState<CartItem[]>(route.params.cart); ;
   
     const total = cart.reduce((sum: number, item: { preco: string; quantity: number }) => {
       return sum + parseFloat(item.preco) * item.quantity;
@@ -52,6 +60,12 @@ async function handleSaveCart() {
       setIsSaving(false);
   }
 }
+
+function handleRemoveItem(id: string) {
+  const updatedCart = cart.filter((item => item.id !== id));
+  setCart(updatedCart); // Atualiza o estado local
+  Alert.alert("Item Removido", "O item foi removido do carrinho.");
+}
   
     return (
       <View style={styles.container}>
@@ -65,6 +79,13 @@ async function handleSaveCart() {
               <Text>Quantidade: {item.quantity}</Text>
               <Text>Preço Unitário: R$ {item.preco}</Text>
               <Text>Subtotal: R$ {parseFloat(item.preco) * item.quantity}</Text>
+              {/* Botão para remover item */}
+            <TouchableOpacity
+              style={styles.removeButton}
+              onPress={() => handleRemoveItem(item.id)}
+            >
+              <Text style={styles.removeButtonText}>Remover</Text>
+            </TouchableOpacity>
             </View>
           )}
         />
@@ -173,7 +194,17 @@ buttonSecundary:{
     pointerEvents:'box-none',
     marginBottom:200,
 
-}
+},
+removeButton: {
+  marginTop: 10,
+  padding: 10,
+  backgroundColor: '#FF6347',
+  borderRadius: 8,
+},
+removeButtonText: {
+  color: '#fff',
+  textAlign: 'center',
+},
 });
 
 export default Cart;

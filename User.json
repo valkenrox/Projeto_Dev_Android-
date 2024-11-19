@@ -13,6 +13,13 @@
       "password": "1231",
       "name": "teste2",
       "adress": "moro la, 23"
+    },
+    {
+      "id": "2b2c",
+      "email": "denoite@valeu.com",
+      "password": "123456",
+      "name": "teste20h",
+      "adress": "moro la e aqui, 22"
     }
   ]
 }

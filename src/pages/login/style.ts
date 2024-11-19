@@ -50,7 +50,7 @@ export const style = StyleSheet.create({
     title:{
         fontSize: 20,
         fontWeight: 'bold',
-        color:"themas.colors.white"
+        color:themas.colors.white
     },
 
     titulo:{

@@ -108,6 +108,60 @@
       ],
       "total": "102.00",
       "date": "2024-11-19T22:20:05.438Z"
+    },
+    {
+      "id": "c58b",
+      "items": [
+        {
+          "id": 2,
+          "titulo": "Smash Duplo com Farofa de Bacon",
+          "descricao": "São dois smash de 80g defumados com farofa de bacon. Você escolhe qual das nossas maioneses artesanais ou molho para deixar seu burguer ainda mais gostoso.",
+          "preco": "49,99",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202404291559_W425_i.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 1,
+          "titulo": "Smash Tudo ",
+          "descricao": "Este prato é composto por um smash de 80g com presunto, cheddar derretido, bacon crocante e ovo, acompanhado de salada com alface americana, cebola roxa, picles e batata palha.",
+          "preco": "45,99",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202401161203_TR3K_i.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "94.00",
+      "date": "2024-11-19T22:37:12.128Z"
+    },
+    {
+      "id": "674c",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Smash Tudo ",
+          "descricao": "Este prato é composto por um smash de 80g com presunto, cheddar derretido, bacon crocante e ovo, acompanhado de salada com alface americana, cebola roxa, picles e batata palha.",
+          "preco": "45,99",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202401161203_TR3K_i.jpg",
+          "quantity": 2
+        },
+        {
+          "id": 2,
+          "titulo": "Smash Duplo com Farofa de Bacon",
+          "descricao": "São dois smash de 80g defumados com farofa de bacon. Você escolhe qual das nossas maioneses artesanais ou molho para deixar seu burguer ainda mais gostoso.",
+          "preco": "49,99",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202404291559_W425_i.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "titulo": "Triplo Cheddar",
+          "descricao": "",
+          "preco": "56,99",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202310040440_4O50_i.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "195.00",
+      "date": "2024-11-19T23:16:36.972Z"
     }
   ]
 }

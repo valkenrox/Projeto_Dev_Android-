@@ -39,7 +39,7 @@ export default function App() {
           options={{ title: 'Cardapio' }} 
         />
         <Stack.Screen name="Cart" component={Carrinho} 
-        options={{title:'Cart'}}
+        options={{title:'Carrinho'}}
         />
       
       

@@ -29,7 +29,7 @@ async function handleSaveCart() {
           return Alert.alert("Aviso", "O carrinho está vazio!");
       }
 
-      const response = await fetch("http://localhost:3001/cart", {
+      const response = await fetch("http://192.168.1.97:3001/cart", {
           method: "POST",
           headers: {
               "Content-Type": "application/json",
@@ -45,17 +45,17 @@ async function handleSaveCart() {
           throw new Error("Erro ao salvar os itens do carrinho no servidor.");
       }
 
-      Alert.alert("Sucesso", "Carrinho salvo com sucesso!",
+      Alert.alert("Sucesso", "Compra finalizada!",
         [
           {
             text: "OK",
-            onPress: () => navigation.navigate("Login")
+            onPress: navigation.navigate("Cardapio")
           }
         ]
       );
   } catch (error) {
       console.error("Erro ao salvar o carrinho:", error);
-      Alert.alert("Erro", "Não foi possível salvar o carrinho.");
+      Alert.alert("Erro", "Não foi possível finalizar a compra.");
   } finally {
       setIsSaving(false);
   }
@@ -91,20 +91,13 @@ function handleRemoveItem(id: string) {
         />
         <Text style={styles.total}>Total: R$ {total.toFixed(2)}</Text>
         <TouchableOpacity
-                style={styles.button}
-                onPress={handleSaveCart}
-                disabled={isSaving}
-            >
-                <Text style={styles.buttonText}>
-                    {isSaving ? "Salvando..." : "Salvar Carrinho"}
-                </Text>
-            </TouchableOpacity>
-        <TouchableOpacity
           style={styles.button}
-          onPress={() => handleSaveCart}
+          onPress={handleSaveCart}
           disabled={isSaving}
         >
-          <Text style={styles.buttonText}>Finalizar Compra</Text>
+          <Text style={styles.buttonText}>
+          {isSaving ? "Finalizando a compra..." : "Finalizar Compra"}
+          </Text>
         </TouchableOpacity>
 
 
@@ -117,12 +110,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    color: 'white',
   },
   item: {
     marginBottom: 15,
@@ -139,6 +133,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 20,
     textAlign: 'right',
+    color: 'white',
+    marginEnd: 20,
+    marginVertical: 30,
   },
   checkoutButton: {
     backgroundColor: '#007BFF',
@@ -167,13 +164,14 @@ const styles = StyleSheet.create({
     shadowRadius:4.65,
     elevation:7,
     pointerEvents:'box-none',
-    marginBottom:200,
+    marginBottom:20,
 
 },
 buttonText:{ 
     fontSize:14,
     color:'#FFF',
     fontWeight:'bold' 
+    
 
 },
 buttonSecundary:{
@@ -205,6 +203,7 @@ removeButtonText: {
   color: '#fff',
   textAlign: 'center',
 },
+
 });
 
 export default Cart;

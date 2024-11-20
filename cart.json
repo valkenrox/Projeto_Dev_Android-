@@ -162,6 +162,352 @@
       ],
       "total": "195.00",
       "date": "2024-11-19T23:16:36.972Z"
+    },
+    {
+      "id": "5810",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:55:38.398Z"
+    },
+    {
+      "id": "bd1e",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:55:41.430Z"
+    },
+    {
+      "id": "5dd3",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:56:15.673Z"
+    },
+    {
+      "id": "7cee",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:56:16.633Z"
+    },
+    {
+      "id": "35f1",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:56:17.041Z"
+    },
+    {
+      "id": "e3cb",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:56:17.208Z"
+    },
+    {
+      "id": "677b",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:56:17.395Z"
+    },
+    {
+      "id": "cf2f",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:56:17.549Z"
+    },
+    {
+      "id": "b3cd",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:56:17.718Z"
+    },
+    {
+      "id": "3f6f",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:56:18.802Z"
+    },
+    {
+      "id": "e8cd",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "17.00",
+      "date": "2024-11-20T16:56:20.237Z"
+    },
+    {
+      "id": "5dfa",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Smash Tudo ",
+          "descricao": "Este prato é composto por um smash de 80g com presunto, cheddar derretido, bacon crocante e ovo, acompanhado de salada com alface americana, cebola roxa, picles e batata palha.",
+          "preco": "45,99",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202401161203_TR3K_i.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "titulo": "Smash Duplo com Farofa de Bacon",
+          "descricao": "São dois smash de 80g defumados com farofa de bacon. Você escolhe qual das nossas maioneses artesanais ou molho para deixar seu burguer ainda mais gostoso.",
+          "preco": "49,99",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202404291559_W425_i.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "titulo": "Batata Mag's",
+          "descricao": "Batata Crinkle média, crocante por fora e macia por dentro, coberta com Cheddar Melt e cubos de bacon crocantes, formando uma combinação indulgente e saborosa.",
+          "preco": "35,99",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202401222031_4EJ0_i.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "129.00",
+      "date": "2024-11-20T21:34:11.245Z"
+    },
+    {
+      "id": "1e72",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "titulo": "Ginseng Guaraviton 500ml",
+          "descricao": "Embalagem 500ml",
+          "preco": "8,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202303281154_i0m5k53odxf.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "titulo": "Porção de Anéis de Cebola M",
+          "descricao": "Porção de 10 anéis de cebola crocantes, acompanhados de maionese ou molho à escolha.",
+          "preco": "27,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202401222120_86DP_i.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "44.00",
+      "date": "2024-11-20T21:35:35.873Z"
+    },
+    {
+      "id": "a6c8",
+      "items": [
+        {
+          "id": 5,
+          "titulo": "Porção de Anéis de Cebola M",
+          "descricao": "Porção de 10 anéis de cebola crocantes, acompanhados de maionese ou molho à escolha.",
+          "preco": "27,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202401222120_86DP_i.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 1,
+          "titulo": "Smash Tudo ",
+          "descricao": "Este prato é composto por um smash de 80g com presunto, cheddar derretido, bacon crocante e ovo, acompanhado de salada com alface americana, cebola roxa, picles e batata palha.",
+          "preco": "45,99",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/28f3a836-186e-4b27-8279-f4f6d6ddf52b/202401161203_TR3K_i.jpg",
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "titulo": "Coca-Cola Zero 350ml",
+          "descricao": "Lata 350ml",
+          "preco": "9,00",
+          "imagem": "https://static.ifood-static.com.br/image/upload/t_medium/pratos/820af392-002c-47b1-bfae-d7ef31743c7f/202210182256_z5wpdgncho.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": "81.00",
+      "date": "2024-11-20T21:41:58.635Z"
     }
   ]
 }

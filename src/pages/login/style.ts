@@ -50,7 +50,8 @@ export const style = StyleSheet.create({
     title:{
         fontSize: 20,
         fontWeight: 'bold',
-        color:themas.colors.white
+        color:themas.colors.white,
+        marginTop: 5,
     },
 
     titulo:{
@@ -59,7 +60,7 @@ export const style = StyleSheet.create({
         color: themas.colors.white,
         fontWeight:'semibold',
         marginLeft: 5,
-        marginTop:5,
+        marginTop:10,
     },
 
     boxInput:{
@@ -95,7 +96,8 @@ export const style = StyleSheet.create({
         shadowRadius:4.65,
         elevation:7,
         pointerEvents:'box-none',
-        marginBottom:200,
+        marginBottom:100,
+        marginVertical: 100,
 
     },
     buttonText:{ 

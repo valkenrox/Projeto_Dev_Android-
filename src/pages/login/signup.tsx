@@ -15,7 +15,7 @@ export default function SignUp() {
                 return Alert.alert("Error", "Todos os campos são obrigatórios.");
             }
             
-            const response = await fetch("http://localhost:3000/users", {
+            const response = await fetch("http://192.168.1.97:3000/users", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -36,7 +36,7 @@ export default function SignUp() {
             }
         } catch (error) {
             console.error(error);
-            Alert.alert("Error", "Houve um arro ao registrar seu usuário.");
+            Alert.alert("Error", "Houve um erro ao registrar seu usuário.");
         }
     }
 
